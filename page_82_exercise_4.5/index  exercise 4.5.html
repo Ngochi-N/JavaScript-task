@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ex 4.5</title>
+</head>
+<body>
+    <script>
+        //         Create a variable called prize and use a prompt to ask the user to set the 
+// value by selecting a number between 0 and 10
+let prize;
+
+// 2. Convert the prompt response to a number data type
+let userInput = prompt("select a number between 0 and 10:");
+// 3. Create a variable to use for the output message containing the value "My 
+// Selection: "
+let selectedNumber = Number(userInput);
+
+// 4. Using the switch statement (and creativity), provide a response back 
+// regarding a prize that is awarded depending on what number is selected
+let outputMessage = "my selection:";
+// 5. Use the switch break to add combined results for prizes
+switch ( selectedNumber){
+    case 0:
+        prize = "you win a participation certificate";
+        break;
+    case 1:
+    case 2: 
+        prize = "you win a small toy";
+        break;
+    case 3: 
+    case 4: 
+    prize = "you win a gift card";
+        break;
+    case 5: 
+    prize = "you just win yourself a premium item";
+        break;
+    case 6: 
+    case 7: 
+        prize = "you win a special edition item"
+        break;
+    case 8: 
+    case 9: 
+         prize = "you win a great prize"
+         break;
+    case 10:
+         prize = "you hit the jackpot, a big surprise awaits you";
+         default:
+            prize = "invalid selection. please choose a number between 0 and 10.";           
+}
+// 6. Output the message back to the user by concatenating your prize variable 
+// strings and the output message string
+alert(outputMessage + prize);
+    </script>
+</body>
+</html>

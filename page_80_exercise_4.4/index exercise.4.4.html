@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ex 4.4</title>
+</head>
+<body>
+    <script>
+        // 1. Set a variable that gets a random value assigned to it, with a range from 0 to 5
+let randomValue = Math.floor(Math.random() * 6); // Generates a random number between 0 and 5
+
+// 2. Create a prompt to get a string value input from the user
+let userQuestion = prompt("Ask the Magic 8-Ball your question:");
+
+// 3. Create 6 responses using the switch statement
+let magic8BallResponse;
+
+switch (randomValue) {
+    case 0:
+        magic8BallResponse = "Yes, definitely!";
+        break;
+    case 1:
+        magic8BallResponse = "No, absolutely not.";
+        break;
+    case 2:
+        magic8BallResponse = "Maybe, it's possible.";
+        break;
+    case 3:
+        magic8BallResponse = "Ask again later.";
+        break;
+    case 4:
+        magic8BallResponse = "It is certain.";
+        break;
+    case 5:
+        magic8BallResponse = "Very doubtful.";
+        break;
+    default:
+        magic8BallResponse = "I can't predict that right now.";
+        break;
+}
+
+// 4. Output the user's original question, plus the randomly selected response, to the console
+
+console.log(You asked: "{userQuestion}");
+console.log(Magic 8-Ball says: "${magic8BallResponse}");
+    </script>
+</body>
+</html>
